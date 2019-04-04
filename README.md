@@ -27,7 +27,9 @@ after successful -PLACE
 
 
 #Edit Table size - index.js
+
  var tableH = 5; //set table size; edit here
+ 
  var tableW = 5; //set table size; edit here
 
 #cheers 
