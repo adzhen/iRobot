@@ -15,7 +15,7 @@ creator: AdWong
   commands : 
   1. PLACE {digit,digit,south/east/north/west} //ie : PLACE 2,2,east
   
-  //after successful -PLACE
+   //after successful -PLACE
   2. MOVE
   
   3. LEFT
