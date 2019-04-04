@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>iRobot</title>
+	<script src="./js/jquery-3.3.1.min.js"></script>
+	<script src="./js/index.js"></script>
+</head>
+<style>
+body{
+	background-color:dimgrey;
+}
+
+.main-table{
+	position:absolute;
+	width:20em;
+	height:20em;
+	background-color:black;
+	color:white;
+	left:10%;
+	top:25%;
+}
+.main-table td{
+	border:1px white solid;
+	text-align: center;
+}
+
+.console{
+	background-color:darkgrey;
+	position:absolute;
+	bottom:0;
+	width:99%;
+	height:5%;
+	padding:0;
+}
+
+.console_history{
+	position: absolute;
+	width:99%;
+	height:15%;
+	bottom:5%;
+	background-color:#ecebeb;
+	overflow:auto;
+}
+
+.console_command{
+	background-color:inherit;
+	border:0;
+	width:90%;
+	padding:0;
+	height:100%;
+	outline-width: 0;
+}
+
+.console .console_btn{
+	background-color:#c1c3c4;
+	border:0;
+	width:10%;
+	position:absolute;
+	padding:0;
+	height:100%;
+	outline-width: 0;
+}
+
+.compass{
+	position:absolute;
+	height:auto;
+	width:auto;
+	left:17.5%;
+}
+
+.robot{
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-color:dimgrey;
+}
+
+.robot_SOUTH{
+	background-image: url(assets/robot_south.png);
+}
+.robot_WEST{
+	background-image: url(assets/robot_west.png);
+}
+.robot_NORTH{
+	background-image: url(assets/robot_north.png);
+}
+.robot_EAST{
+	background-image: url(assets/robot_east.png);
+}
+</style>
+<html>
+<body>
+<h1>IRobot</h1>
+<div class="compass"><img src="./assets/compass.png" width="80px"></div>
+<table class="main-table"></table>
+
+<div id="console_history" class="console_history"></div>
+<div id="bottom_console" class="console">
+	<input id="console_command" class="console_command" type="text" placeholder="type here...">
+	<input id="console_enter" class="console_btn" type="button" value="enter">
+</div>
+</body>
+</html>
